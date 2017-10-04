@@ -104,8 +104,5 @@ let FireDeck = {
       cardtype.cardNumber = cardtype.baseCardNumber;
     })
   }
-
 };
-
-console.log(SylvanDeck.shuffleDeck());
-console.log(FireDeck.shuffleDeck());
+module.exports = {SylvanDeck, FireDeck};
