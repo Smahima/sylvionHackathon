@@ -32,8 +32,6 @@ let SylvanDeck = {
     if (currentDraw.cardNumber !== 0) {
       currentDraw.cardNumber--;
       shuffledDeck.push(currentDraw);
-    } else {
-      this.shuffleDeck();
     }
   }
   return shuffledDeck;
@@ -42,7 +40,9 @@ let SylvanDeck = {
     let cardSum = 0;
     this.theCards.forEach(cardtype => {
       cardSum += cardtype.cardNumber
+
     })
+    console.log(cardSum);
     return cardSum;
   },
   resetDeck: function() {
@@ -86,8 +86,6 @@ let FireDeck = {
     if (currentDraw.cardNumber !== 0) {
       currentDraw.cardNumber--;
       shuffledDeck.push(currentDraw);
-    } else {
-      this.shuffleDeck();
     }
   }
   return shuffledDeck;
@@ -97,6 +95,7 @@ let FireDeck = {
     this.theCards.forEach(cardtype => {
       cardSum += cardtype.cardNumber
     })
+    console.log(cardSum);
     return cardSum;
   },
   resetDeck: function() {
