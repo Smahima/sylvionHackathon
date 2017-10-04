@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../styles/App.css';
 import Deal from "../components/Deal.js"
 import Board from "../components/Board.js"
+import Plant from "../components/Plant.js"
 
 class App extends Component {
   render() {
@@ -11,7 +12,7 @@ class App extends Component {
       <div>
         <Board />
         <Deal />
-
+        <Plant />
       </div>
 
       {this.props.children}
