@@ -29,13 +29,50 @@
 .board{
   display:flex;
 }
+
+.fireCards {
+  height: 250px;
+  width: 150px;
+  border: 1px solid red;
+  flex-direction: row;
+  margin: 10px;
+
+}
 .card{
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 150px;
   border: 1px solid green;
   flex-direction: row;
-  margin: 50px;
+  margin: 10px;
 }
+
+
+  .defense {
+    display: flex;
+    border: 5px solid green;
+  }
+
+  .discard {
+    height: 250px;
+    width: 150px;
+    border: 1px dotted grey;
+
+  }
+
+  .deck {
+    height: 250px;
+    width: 150px;
+    border: 1px solid blue;
+    margin-left: 10px;
+  }
+
+  .play {
+    height: 250px;
+    width: 150px;
+    border: 1px solid orange;
+    margin-left: 10px;
+  }
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
