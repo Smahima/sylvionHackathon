@@ -7,6 +7,11 @@
   height: 80px;
 }
 
+body{
+  dislay: flex;
+  flex-basis: 100%;
+}
+
 .App-header {
   background-color: #222;
   height: 150px;
@@ -28,6 +33,9 @@
 }
 .board{
   display:flex;
+  margin-left: 10%;
+  margin-right: 10%;
+
 }
 
 .fireCards {
@@ -36,6 +44,7 @@
   border: 1px solid red;
   flex-direction: row;
   margin: 10px;
+  border-radius: 5%;
 
 }
 .card{
@@ -44,12 +53,20 @@
   border: 1px solid green;
   flex-direction: row;
   margin: 10px;
+  border-radius: 5%;
+
+}
+
+img {
+  border-radius: 5%;
 }
 
 
   .defense {
     display: flex;
-    border: 5px solid green;
+    border: 2px solid green;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .discard {
@@ -70,7 +87,7 @@
     disply: flex;
     border: 1px solid orange;
     margin-left: 10px;
-  
+
   }
   .hand{
     height: 250px;
@@ -79,6 +96,8 @@
     flex-wrap: wrap;
     margin: 10px;
   }
+
+
 
 
 
