@@ -23,8 +23,64 @@
 }
 
 .deck {
- border: solid; 
+ border: solid blue;
+ border-width: 20%;
 }
+.board{
+  display:flex;
+}
+
+.fireCards {
+  height: 250px;
+  width: 150px;
+  border: 1px solid red;
+  flex-direction: row;
+  margin: 10px;
+
+}
+.card{
+  height: 250px;
+  width: 150px;
+  border: 1px solid green;
+  flex-direction: row;
+  margin: 10px;
+}
+
+
+  .defense {
+    display: flex;
+    border: 5px solid green;
+  }
+
+  .discard {
+    height: 250px;
+    width: 150px;
+    border: 1px dotted grey;
+
+  }
+
+  .deck {
+    height: 250px;
+    width: 150px;
+    border: 1px solid blue;
+    margin-left: 10px;
+  }
+
+  .play {
+    disply: flex;
+    border: 1px solid orange;
+    margin-left: 10px;
+  
+  }
+  .hand{
+    height: 250px;
+    width: 150px;
+    border: 1px solid green;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
