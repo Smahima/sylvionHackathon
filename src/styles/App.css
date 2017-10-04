@@ -23,7 +23,8 @@
 }
 
 .deck {
- border: solid; 
+ border: solid blue;
+ border-width: 20%;
 }
 
 @keyframes App-logo-spin {
