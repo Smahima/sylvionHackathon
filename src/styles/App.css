@@ -67,11 +67,19 @@
   }
 
   .play {
-    height: 250px;
-    width: 150px;
+    disply: flex;
     border: 1px solid orange;
     margin-left: 10px;
+  
   }
+  .hand{
+    height: 250px;
+    width: 150px;
+    border: 1px solid green;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+
 
 
 @keyframes App-logo-spin {

@@ -4,6 +4,7 @@ import "../styles/App.css";
 export default class Deal extends Component {
   render() {
     return (
+
       <div className="defense">
         <div className="card-block">
           <h4 className="card-title">Discard Pile</h4>
@@ -16,11 +17,16 @@ export default class Deal extends Component {
         </div>
         <div className="card-block">
           <h4 className="card-title">Hand to Play</h4>
-          <div className="play" />
-          <div className="play" />
+          <div className="play">
+            <div className="hand"> </div>
+            <div className="hand"> </div>
+          </div>
+
           <button className="plant">Plant</button>
         </div>
       </div>
+
+
     );
   }
 }
