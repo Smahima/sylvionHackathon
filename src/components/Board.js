@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Tree from "../images/tree.jpg";
+import fireCard from "../images/fireCard.jpg";
 
 
 class Board extends Component {
@@ -20,6 +21,7 @@ class Board extends Component {
           <div className="card">
           </div>
           <div className= "fireCards">
+          <img src={fireCard} alt="Fire Deck" height="250" width="150"/>
           </div>
         </div>
 
