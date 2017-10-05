@@ -4,17 +4,26 @@ import fireCard from "../images/fireCard.jpg";
 import FireDeck from '../models/deck.js';
 // import SylvanDeck from '../models/sylvanDeck.js';
 
+let fireDeckArray;
+function newGame(e) {
+  FireDeck.resetDeck()
+  fireDeckArray = FireDeck.shuffleDeck()
+  let board = []
+  board[3] = fireDeckArray.shift()
+  console.log(fireDeckArray)
+  console.log(board);
 
-
+}
 
 export default class Board extends Component {
+
   render() {
-    console.log(FireDeck.shuffleDeck())
+
     return (
       <div className="App">
         <h1> Sylvion </h1>
 
-      <button type="submit" >New Game</button>
+      <button type="submit" onClick={newGame}>New Game</button>
 
 
         <div className="board">
