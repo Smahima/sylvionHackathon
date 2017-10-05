@@ -10,21 +10,22 @@ export default class Deal extends Component {
 
         <div className="card-block">
           <h4 className="card-title">Discard Pile</h4>
-          <div className="discard" />
+          <div className="discard" >
+          </div>
         </div>
 
-        let hand = [];
-        let dealt = deals.SylvanDeck.map((deal) => {
+
           <div className="card-block">
             <h4 className="card-title">Defense Deck</h4>
-            <div className="deck" />
+            <div className="deck">
+            </div>
             <button className="deal">Deal</button>
             </div>
 
-          </div>
-        })
+        </div>
+
+      )}
 
 
-    );
+
   }
-}

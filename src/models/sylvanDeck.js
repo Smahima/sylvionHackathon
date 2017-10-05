@@ -1,32 +1,32 @@
-import React from 'react';
+import React from 'React';
 
-
-let FireDeck = {
+let SylvanDeck = {
   theCards: [{
-      cardName: "tiny fire",
+      cardName: "tiny fountain",
       cardNumber: 3,
       baseCardNumber: 3,
-      power: 0
+      power: 1
     },
     {
-      cardName: "small fire",
+      cardName: "small fountain",
       cardNumber: 3,
       baseCardNumber: 3,
-      power: 1,
+      power: 2,
     },
     {
-      cardName: "medium fire",
-      cardNumber: 3,
-      baseCardNumber: 3,
-      power: 2
-    },
-    {
-      cardName: "large fire",
+      cardName: "medium fountain",
       cardNumber: 3,
       baseCardNumber: 3,
       power: 3
+    },
+    {
+      cardName: "large fountain",
+      cardNumber: 3,
+      baseCardNumber: 3,
+      power: 4
     }
   ],
+  cardTypes: 4,
   shuffleDeck: function() {
     let shuffledDeck = [];
     while(this.getCardTotal() !== 0){
@@ -42,6 +42,7 @@ let FireDeck = {
     let cardSum = 0;
     this.theCards.forEach(cardtype => {
       cardSum += cardtype.cardNumber
+
     })
     console.log(cardSum);
     return cardSum;
@@ -51,6 +52,10 @@ let FireDeck = {
       cardtype.cardNumber = cardtype.baseCardNumber;
     })
   }
+
 };
 
-export default FireDeck;
+
+
+// module.exports = {SylvanDeck, FireDeck};
+export default SylvanDeck;

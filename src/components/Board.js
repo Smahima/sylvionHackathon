@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
 import Tree from "../images/tree.jpg";
 import fireCard from "../images/fireCard.jpg";
+import FireDeck from '../models/deck.js';
+// import SylvanDeck from '../models/sylvanDeck.js';
 
 
-// when click submit, pu
-class Board extends Component {
+
+
+export default class Board extends Component {
   render() {
+    console.log(FireDeck.shuffleDeck())
     return (
       <div className="App">
-        <header> Sylvion </header>
-        <button onSubmit=""> New Game </button>
+        <h1> Sylvion </h1>
+
+      <button type="submit" >New Game</button>
+
 
         <div className="board">
           <img src={Tree} alt="cartoon tree"/>
@@ -31,5 +37,3 @@ class Board extends Component {
     );
   }
 }
-
-export default Board;
