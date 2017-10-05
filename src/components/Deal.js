@@ -3,6 +3,9 @@ import "../styles/App.css";
 import treeCard from "../images/treeCard.jpg";
 import Deck from "../models/deck.js"
 
+
+
+
 export default class Deal extends Component {
   render() {
     return (
@@ -25,13 +28,14 @@ export default class Deal extends Component {
             </div>
             <div className="playerHand">
             <h4 className="card-title">Your Hand</h4>
-            <div className="hand"> </div>
+            <div className="hand">
+            <img src={treeCard} alt="Fire Deck" height="250" width="150"/></div>
             <button className="plant">Plant</button>
             </div>
             <div className="playerHand">
             <h4 className="card-title">Your Hand</h4>
-            <div className="hand"> </div>
-            
+            <div className="hand"> <img src={treeCard} alt="Fire Deck" height="250" width="150"/></div>
+
             </div>
 
         </div>
