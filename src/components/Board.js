@@ -5,23 +5,39 @@ import FireDeck from '../models/deck.js';
 // import SylvanDeck from '../models/sylvanDeck.js';
 
 let fireDeckArray;
+let board = [];
+let cards;
+
+
 function newGame(e) {
   FireDeck.resetDeck()
   fireDeckArray = FireDeck.shuffleDeck()
-  let board = []
-  board[3] = fireDeckArray.shift()
+  board[0] = fireDeckArray.shift()
   console.log(fireDeckArray)
-  console.log(board);
+  console.log("board",board);
 
+  console.log("map board", board);
+  // cards = board.map((card, index) => {
+  //         return (
+  //           <div key={index} >
+  //             <p> test</p>
+  //           </div>
+  //
+  //         )
+  //       })
 }
 
 export default class Board extends Component {
 
   render() {
 
+ const cards = board.power
+
+
     return (
       <div className="App">
         <h1> Sylvion </h1>
+        {cards}
 
       <button type="submit" onClick={newGame}>New Game</button>
 
@@ -35,6 +51,7 @@ export default class Board extends Component {
           <div className="card" id="slot3">
           </div>
           <div className="card" id="slot4">
+          {cards}
           </div>
           <div className= "fireCards">
           <img src={fireCard} alt="Fire Deck" height="250" width="150"/>
@@ -44,5 +61,5 @@ export default class Board extends Component {
 
       </div>
     );
+      }
   }
-}

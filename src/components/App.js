@@ -12,7 +12,6 @@ class App extends Component {
       <div>
         <Board />
         <Deal />
-        <Plant />
       </div>
 
       {this.props.children}
